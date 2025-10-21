@@ -5,6 +5,9 @@ cc_library(
     srcs = ["htime.cc"],
     hdrs = ["htime.h"],
     visibility = ["//cmd:__pkg__"],
+    deps = [
+      "@fmt//:fmt",
+    ],
 )
 
 
