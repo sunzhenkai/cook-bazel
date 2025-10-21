@@ -4,10 +4,9 @@ cc_library(
     name = "htime",
     srcs = ["htime.cc"],
     hdrs = ["htime.h"],
-    visibility = ["//cmd:__pkg__"],
+    # visibility = ["//cmd:__pkg__"],
+    visibility = ["//visibility:public"],
     deps = [
       "@fmt//:fmt",
     ],
 )
-
-
